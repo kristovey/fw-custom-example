@@ -15,9 +15,9 @@ Gpio getWarningLedPin() {
 
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
-     engineConfiguration->injectionPins[0] = Gpio::F13;
+    // engineConfiguration->injectionPins[0] = Gpio::F13;
 	
-     engineConfiguration->ignitionPins[0] = Gpio::E15;
+     //engineConfiguration->ignitionPins[0] = Gpio::E15;
 
 //   engineConfiguration->triggerInputPins[0] = Gpio::B1;
 //	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
@@ -37,13 +37,31 @@ static void customBoardDefaultConfiguration() {
 
 //	engineConfiguration->adcVcc = 3.3f;
 
-//	engineConfiguration->clt.config.bias_resistor = 2490;
-//	engineConfiguration->iat.config.bias_resistor = 2490;
+	engineConfiguration->clt.config.bias_resistor = 2490;
+	engineConfiguration->iat.config.bias_resistor = 2490;
 
 
 	// Battery sense on PA0
-//	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
+	engineConfiguration->vbattDividerCoeff = 6.5f;
+	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
 }
+static Gpio OUTPUTS[] = {
+    Gpio::D11, // 
+    Gpio::D12, // 
+    Gpio::D13, //
+    Gpio::D14, //
+    Gpio::E11, //
+    Gpio::E12,
+};
+
+int getBoardMetaOutputsCount() {
+    return efi::size(OUTPUTS);
+}
+
+Gpio* getBoardMetaOutputs() {
+    return OUTPUTS;
+}
+
 
 void setup_custom_board_overrides() {
     custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
