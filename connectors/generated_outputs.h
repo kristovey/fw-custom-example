@@ -4,6 +4,20 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS[] = {
-	Gpio::B14, // B14 Output
-// "B14 Output",
+	Gpio::D12, // IGN 1
+	Gpio::D13, // IGN 2
+	Gpio::E14, // INJ 1
+	Gpio::E13, // INJ 2
+	Gpio::D8, // FP
+	Gpio::E5, // TACH
+	Gpio::B14, // ALED
+	Gpio::B15, // WLED
+// "IGN 1",
+// "IGN 2",
+// "INJ 1",
+// "INJ 2",
+// "FP",
+// "TACH",
+// "ALED",
+// "WLED",
 }
