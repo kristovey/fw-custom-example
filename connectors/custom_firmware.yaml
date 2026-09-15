@@ -2,29 +2,35 @@ pins:
   - id: D12
     class: outputs
     ts_name: IGN 1
+
   - id: D13
     class: outputs
     ts_name: IGN 2
+
   - id: E14
     class: outputs
     ts_name: INJ 1
+
   - id: E13
     class: outputs
     ts_name: INJ 2
+
   - id: D8
     class: outputs
     ts_name: FP
+
   - id: E5
     class: outputs
     ts_name: TACH
+
   - id: B14
     class: outputs
     ts_name: ALED
+
   - id: B15
     class: outputs
     ts_name: WLED
     
-
   - id: A1
     class: analog_inputs
 # getAdcChannelBrainPin in 'stm32_adc.cpp' says EFI_ADC_0 is PA0
