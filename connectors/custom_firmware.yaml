@@ -31,36 +31,35 @@ pins:
     class: outputs
     ts_name: WLED
     
-  - id: A1
+  - id: EFI_ADC_0
     class: analog_inputs
 # getAdcChannelBrainPin in 'stm32_adc.cpp' says EFI_ADC_0 is PA0
-    ts_name: On-board Battery Sense (A1)
+    ts_name: On-board Battery Sense (A0)
 
-  - id: A2
+  - id: EFI_ADC_2
     class: analog_inputs
     ts_name: TPS
 
-  - id: C4
+  - id: EFI_ADC_14
     class: analog_inputs
     ts_name: MAP
 
-  - id: C5
+  - id: EFI_ADC_15
     class: analog_inputs
     ts_name: CLT
 
-  - id: B0
+  - id: EFI_ADC_8
     class: analog_inputs
     ts_name: IAT
 
-  - id: B1
+  - id: EFI_ADC_9
     class: analog_inputs
     ts_name: o2
 
-  - id: [B2, B5]
+  - id: [E2, E2]
     class: [switch_inputs, event_inputs]
     ts_name: VR
 
-  - id: [C3, C3]
+  - id: [E3, E3]
     class: [switch_inputs, event_inputs]
     ts_name: Hall
-
