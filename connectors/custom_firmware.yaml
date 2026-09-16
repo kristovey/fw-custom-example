@@ -60,6 +60,6 @@ pins:
     class: [switch_inputs, event_inputs]
     ts_name: VR
 
-  - id: [E3, E3]
+  - id: [C6, C6]
     class: [switch_inputs, event_inputs]
     ts_name: Hall
