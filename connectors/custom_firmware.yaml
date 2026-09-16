@@ -56,7 +56,7 @@ pins:
     class: analog_inputs
     ts_name: o2
 
-  - id: [E2, E2]
+  - id: [B5, B5]
     class: [switch_inputs, event_inputs]
     ts_name: VR
 

@@ -20,7 +20,7 @@ const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 			return "INJ 2";
 		case Gpio::E14:
 			return "INJ 1";
-		case Gpio::E2:
+		case Gpio::B5:
 			return "VR";
 		case Gpio::E3:
 			return "Hall";
