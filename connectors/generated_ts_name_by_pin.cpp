@@ -12,6 +12,8 @@ const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 			return "WLED";
 		case Gpio::B5:
 			return "VR";
+		case Gpio::C6:
+			return "Hall";
 		case Gpio::D12:
 			return "IGN 1";
 		case Gpio::D13:
@@ -22,8 +24,6 @@ const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 			return "INJ 2";
 		case Gpio::E14:
 			return "INJ 1";
-		case Gpio::E3:
-			return "Hall";
 		case Gpio::E5:
 			return "TACH";
 		default:
